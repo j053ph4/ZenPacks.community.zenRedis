@@ -9,7 +9,11 @@
             return ob;
         }
     }
-
+    
+    function pass_link(ob){ 
+        return ob; 
+    }
+    
     ZC.RedisDBPanel = Ext.extend(ZC.ComponentGridPanel, {
         constructor: function(config) {
             config = Ext.applyIf(config||{}, {
@@ -65,16 +69,18 @@
                         "dataIndex": "name"
                     }, 
                     {
-                        "header": "IP Service", 
-                        "width": 120, 
                         "sortable": "true", 
+                        "width": 120, 
+                        "header": "IP Service", 
+                        "renderer": "pass_link", 
                         "id": "getIpserviceLink", 
                         "dataIndex": "getIpserviceLink"
                     }, 
                     {
-                        "header": "Port", 
-                        "width": 120, 
                         "sortable": "true", 
+                        "width": 120, 
+                        "header": "Port", 
+                        "renderer": "pass_link", 
                         "id": "port", 
                         "dataIndex": "port"
                     }, 

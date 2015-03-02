@@ -1206,5 +1206,10 @@ AVERAGE
 </object>
 <!-- ('', 'zport', 'dmd', 'Events', 'App', 'Redis') -->
 <object id='/zport/dmd/Events/App/Redis' module='Products.ZenEvents.EventClass' class='EventClass'>
+<property type="text" id="transform" mode="w" >
+setPDKey('ageroViewServiceKey')
+
+if 'localhost' in evt.device:  setPDKey('zenossServiceKey')
+</property>
 </object>
 </objects>

@@ -2,7 +2,7 @@ from ZenPacks.community.ConstructionKit.BasicDefinition import *
 from ZenPacks.community.ConstructionKit.Construct import *               
                             
 RedisDefinition = type('RedisDefinition', (BasicDefinition,), {
-        'version' : Version(1, 1, 0),
+        'version' : Version(1, 1, 1),
         'zenpackbase': "zenRedis",
         'component' : 'RedisDB',
         'componentData' : {
@@ -19,7 +19,9 @@ RedisDefinition = type('RedisDefinition', (BasicDefinition,), {
                           },
         'cmdFile' : 'check_redis.pl',
         'addManual' : True,
-        'createDS' :  False
+        'createDS' :  False,
+        'saveOld': True,
+        'loadOld': True,
         }
 )
 
@@ -27,3 +29,4 @@ addDefinitionSelfComponentRelation(RedisDefinition,
                           'redisdb', ToOne, 'ZenPacks.community.zenRedis.RedisDB','port',
                           'ipservice',  ToOne, 'Products.ZenModel.IpService', 'port',
                           'IP Service', 'port')
+
