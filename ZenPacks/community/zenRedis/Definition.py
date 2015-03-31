@@ -15,6 +15,7 @@ RedisDefinition = type('RedisDefinition', (BasicDefinition,), {
                                         'hostname' : addProperty('Hostname or IP','Basic','id', switch='-H', override=True, isReference=True),
                                         'port' : addProperty('Port','Basic','4730', switch='-p',optional='false'),
                                         'eventClass' : getEventClass('/App/Redis'),
+                                        'productKey' : getProductClass('Redis'),
                                         },
                           },
         'cmdFile' : 'check_redis.pl',
