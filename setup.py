@@ -8,7 +8,7 @@ AUTHOR = "Joseph Anderson"
 LICENSE = "Apache"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.community']
 PACKAGES = ['ZenPacks', 'ZenPacks.community', 'ZenPacks.community.zenRedis']
-INSTALL_REQUIRES = ['ZenPacks.community.ConstructionKit']
+INSTALL_REQUIRES = ['ZenPacks.community.ConstructionKit>=3.1']
 COMPAT_ZENOSS_VERS = ">=3.0"
 PREV_ZENPACK_NAME = ""
 # STOP_REPLACEMENTS
