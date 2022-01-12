@@ -23,7 +23,7 @@ ${here/port}
 3
 </property>
 <property type="string" id="commandTemplate" mode="w" >
-${here/ZenPackManager/packs/ZenPacks.community.zenRedis/path}/libexec/check_redis.pl -H ${here/hostname} -P ${here/port} -R -A
+${here/ZenPackManager/packs/ZenPacks.community.zenRedis/path}/libexec/check_redis.pl -H ${here/hostname} -p ${here/port} -R -A
 </property>
 <property type="int" id="cycletime" mode="w" >
 300
